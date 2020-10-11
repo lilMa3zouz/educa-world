@@ -1,0 +1,59 @@
+*{
+    --content2:#2C60A7;
+    --content1: #E3E3E4;    
+}
+body{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.c1{
+    background-color: var(--content1);
+    z-index: 900;
+    color: var(--content2);
+}
+.c2{
+    background-color: var(--content2);
+    color: var(--content1);
+    z-index: 900;
+
+}
+.contentTitle{
+    font-size:60px;
+}
+.page{
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+}
+#logo{
+    text-align: center;
+}
+#top{
+    box-shadow: -1px -1px 6px 0px black;
+}
+#header{
+    border-bottom: 2px solid var(--content2);
+    z-index: 900;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
+#educaTitle{
+    width: 100%;
+    color:var(--content2);
+    text-align: center;
+}
+#prezText{
+    margin: 0;
+    margin-right: 40px;
+    margin-left: 100px;
+    height: 70%;
+}
