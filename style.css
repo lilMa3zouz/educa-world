@@ -88,6 +88,7 @@ body{
 }
 #haut{
     background-image: url(./389873.jpg);
+    background-attachment: fixed;
     position: relative;
     height: 100%;
 }
@@ -97,6 +98,9 @@ body{
 #discover{
     position: absolute;
     top: 50%;
-    left: 37.5%;
-    font-size: 40px;
+    left: 25%;
+}
+.form-group{
+    width: 70%;
+    margin-left: 20%;
 }
