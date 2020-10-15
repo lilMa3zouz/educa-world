@@ -13,20 +13,24 @@
 </head>
 
 <body>
-    <nav id="header" class="site-header py-2" >
+    <nav id="header" class="site-header sticky py-2" >
     <p id="logo" class="logovisible" style="width: 100%;text-align: center;margin-bottom: -20px;margin-top: 0;"><img src="logo.png" height="100px"></p>
       <div class="container d-flex flex-column flex-md-row justify-content-between" id="nav">
-        <a id="el1" onclick="if($('#Accompagnement').length){var getOffset = $('#Accompagnement').offset().top;$('html,body').animate({scrollTop: getOffset - 60}, 500);}" class="py-2 d-none d-md-inline-block" >Accompagnement</a>
-        <a id="el2" onclick="if($('#carouselExampleIndicators').length){var getOffset = $('#carouselExampleIndicators').offset().top;$('html,body').animate({scrollTop: getOffset - 140}, 500);}" class="py-2 d-none d-md-inline-block" >Tests</a>
-        <a id="el3" onclick=" if($('#soutien').length){var getOffset = $('#soutien').offset().top;var targetDistance = 20;$('html,body').animate({scrollTop: getOffset - 200}, 500);}" class="py-2 d-none d-md-inline-block" >Nous soutenir</a>
         <a id="el4" onclick="if($('#apropos').length){var getOffset = $('#apropos').offset().top;var targetDistance = 150;$('html,body').animate({scrollTop: getOffset - targetDistance}, 500);}" class="py-2 d-none d-md-inline-block" >à propos</a>
+        <a id="el2" onclick="if($('#carouselExampleIndicators').length){var getOffset = $('#carouselExampleIndicators').offset().top;$('html,body').animate({scrollTop: getOffset - 140}, 500);}" class="py-2 d-none d-md-inline-block" >Tests</a>
+        <a id="el1" onclick="if($('#Accompagnement').length){var getOffset = $('#Accompagnement').offset().top;$('html,body').animate({scrollTop: getOffset - 60}, 500);}" class="py-2 d-none d-md-inline-block" >Accompagnement</a>
+        <a id="el3" onclick=" if($('#soutien').length){var getOffset = $('#soutien').offset().top;var targetDistance = 20;$('html,body').animate({scrollTop: getOffset - 200}, 500);}" class="py-2 d-none d-md-inline-block" >Nous soutenir</a><a id="el3" onclick=" if($('#soutien').length){var getOffset = $('#soutien').offset().top;var targetDistance = 20;$('html,body').animate({scrollTop: getOffset - 200}, 500);}" class="py-2 d-none d-md-inline-block" >Nous soutenir</a>
+        <a id="el3" onclick=" if($('#faq1').length){var getOffset = $('#faq1').offset().top;var targetDistance = 20;$('html,body').animate({scrollTop: getOffset - 200}, 500);}" class="py-2 d-none d-md-inline-block" >FAQ</a>
+       
       </div>
     </nav>
-        <div id="top" style="height: 80%; ;z-index: 900;">
-          <p id="title" class="py-2">
+        <div id="top">
+          <p id="title" class="">
             <span style="font-size: 80px;" class="c1" >EDUCA'WORLD </span><br>
             <span style="font-size: 25px;border-radius: 5px;" class="c1">Savoir, Épannouissement, Persevérence</span><br>
-            </p>
+            <img id="ecole" src="gettyimages-171224935_0.jpg" width="90%">  
+          </p>
+            
         </div>
         <p style="text-align: center;"><button class="material-icons navigator visible" id="toTop" style="top: 9%;right: 0;border-top: none;" >keyboard_arrow_up</button></p>
         <p style="text-align: center;"><button class="material-icons navigator visible" id="toDown" style="bottom: 0;right:0;border-bottom: none;" >keyboard_arrow_down</button></p>
@@ -116,7 +120,7 @@
 
         <div class="c1" id="soutien" style="width:100%;position:relative;overflow: auto;height: auto;">
             <p style="font-size: 25px;margin-left: 0px;margin-right: 40px;margin-bottom: 0;width: 100%;">
-                <img src="mains2.jpg" style="float: right;" width="53%" >
+                <img src="https://www.yeoandyeo.com/wp-content/uploads/Solicit-with-the-State-of-Michigan-scaled.jpeg" style="float: right;" width="53%" >
                 <h1 style="width: 100%;text-align: center;height: 20%" class="py-4">SOUTENIR LE PROJET</h1>
                 <div style="float: right;margin-left: 0;">
                     <h3>Info 1</h3>
@@ -126,9 +130,26 @@
             </p>
         </div>
 
-        <div class="" style="overflow: auto;width:100%;color: var(--content2)" id="contact">
-          <p class="contentTitle py-1" style="text-align:center"> Nous contacter</p>
-          <form style="width: 50%; height:80%;margin-left: 25%;border-radius: 20px;margin-bottom: 20px; background-color: transparent;">
+        <div id="faq1">
+          <p id="faq1p">
+              <span style="font-size: 130px;margin-top: -20px;">FAQ</span><br>Vos questions,nos réponses</p>
+        </div>
+        <div id="faq2" class="c1 d-flex flex-column flex-md-row justify-content-between">
+          <p class="question">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. DUIS SED EX VITAE SAPIEN GRAVIDA VENENATIS? <br>
+            <span class="reponse">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sodales, mi vitae varius luctus, felis neque lobortis augue, fermentum hendrerit ex libero</span>
+          </p>
+          <p class="question">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. DUIS SED EX VITAE SAPIEN GRAVIDA VENENATIS? <br>
+            <span class="reponse">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sodales, mi vitae varius luctus, felis neque lobortis augue, fermentum hendrerit ex libero</span>
+          </p>
+          <p class="question">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. DUIS SED EX VITAE SAPIEN GRAVIDA VENENATIS? <br>
+            <span class="reponse">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sodales, mi vitae varius luctus, felis neque lobortis augue, fermentum hendrerit ex libero</span>
+          </p>
+        </div>
+
+        <div id="contact">
+          <div style="height:80%;margin-top: 7.5%;margin-bottom: 5%;">
+            <p class="contentTitle py-1" style="text-align:center"> Nous contacter</p>
+          <form id="contactForm">
             <div class="form-group">
               <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="adresse E-mail (pour vous répondre)">
             </div>
@@ -139,15 +160,8 @@
               <textarea class="form-control"  id="exampleFormControlTextarea1" rows="6" placeholder="Question/renseignement"></textarea>
             </div>
             <button type="submit" style="margin-left: 45%;margin-bottom: 20px;" id="contactSubmit" class="btn btn-outline-dark">Envoyer</button>
-
           </form>
-        </div>
-
-        <div id="faq1"><!-- ajouter image najoua...!-->
-        <p style="width: 100%;text-align: center;">FAQ<br>Vos questions,nos réponses</p>
-        </div>
-        <div id="faq2" class="c1">
-        <p style="margin-left: 10%;margin-right: 10%;text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed ex vitae sapien gravida venenatis. Nunc tellus neque, egestas porta metus tempus, placerat egestas enim. Duis sagittis interdum dictum. Donec consectetur nisi suscipit lorem vestibulum egestas. Vestibulum eget dignissim ipsum. Praesent ac congue augue. Curabitur hendrerit quis nulla euismod semper. Sed et metus vel elit rutrum cursus eu interdum erat. Etiam nec libero nunc.</p>
+          </div>
         </div>
 
         <script src="jquery-3.5.1.js"></script>        

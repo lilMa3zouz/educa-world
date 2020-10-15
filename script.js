@@ -1,24 +1,17 @@
 var navbar = document.getElementById("header");
+var cible = document.getElementById("ecole");
 var buttons = [document.getElementById("toTop"),document.getElementById("toDown")]
 var img = document.getElementById("logo");
 var sticky = navbar.offsetTop;
 window.onscroll = function() {
-  if (window.pageYOffset >= img.offsetTop) {
-    navbar.classList.add("sticky")
-    img.classList.remove("logovisible")
+  if (window.pageYOffset >= document.getElementById("ecole").offsetTop) {
     img.classList.add("logoinvisible")
-    
-
-    //buttons.forEach(element => element.classList.remove("visible"))
+    img.classList.remove("logovisible")
+    console.log(navbar.style.minHeight)
   } 
   else {
-    navbar.classList.remove("sticky");
     img.classList.add("logovisible")
     img.classList.remove("logoinvisible")
-
-
-
-    //buttons.forEach(element => element.classList.add("visible"))
   }
 };
 function getPositionXY(element) { 

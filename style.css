@@ -69,7 +69,11 @@ body{
     border-bottom: 1px solid var(--content2);
 }
 #top{
+    margin-top: 9%;
     background-color: var(--content1);
+    height: auto;
+    z-index: 900;
+    overflow: auto;
 
 }
 
@@ -113,7 +117,7 @@ body{
 .card{
     color: var(--content2);
     width: 45%;
-    box-shadow: 0px 0px 1px  0px black;
+    box-shadow: 0px 0px 6px  1px black;
 }
 .card:hover{
     transform: scale(1.03);
@@ -180,11 +184,42 @@ display: none;}
     color: white;
 }
 #contact{
-    background-image: url("mains.jpg");
+    background-image: url("write-593333_1920.jpg");
+    background-size: 100% 100%;
+    height: 75%;
+    overflow: hidden;
+    width:100%;
+    color: var(--content2);
 }
-
+#contactForm{
+    width: 50%;
+    height:80%;
+    margin-left: 23%;
+    border-radius: 20px;
+}
+#faq1{
+    background-image: url("laptop-2548105_19202.jpg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 65%;
+    overflow: auto;
+    width:100%;
+    color: var(--content2);
+}
+#faq1p{
+    width: 40%;
+    text-align: center;
+    transform: translateY(50%);
+    overflow: hidden;
+    font-size: 40px;
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: var(--content1);
+    padding-bottom: 30px;
+}
 #faq2{
-    height: 80%;
+    height: 60%;
     color: var(--content2);
 }
 #contactSubmit{
@@ -204,4 +239,12 @@ display: none;}
     margin-top: 20px;
     margin-bottom: 20px;
     background-color: var(--content1);
+}
+.question{
+    font-size: 30px;
+    margin-top: 40px;
+    width: 30%;
+}
+.reponse{
+    font-size: 25px;
 }
