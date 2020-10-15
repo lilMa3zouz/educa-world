@@ -201,5 +201,7 @@ display: none;}
     font-size: 60px;
 }
 .carousel-indicators{
-    
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: var(--content1);
 }

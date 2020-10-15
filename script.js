@@ -5,15 +5,16 @@ var sticky = navbar.offsetTop;
 window.onscroll = function() {
   if (window.pageYOffset >= img.offsetTop) {
     navbar.classList.add("sticky")
-    img.classList.add("logovisible")
-    img.classList.remove("logoinvisible")
+    img.classList.remove("logovisible")
+    img.classList.add("logoinvisible")
+    
 
     //buttons.forEach(element => element.classList.remove("visible"))
   } 
   else {
     navbar.classList.remove("sticky");
-    img.classList.remove("logovisible")
-    img.classList.add("logoinvisible")
+    img.classList.add("logovisible")
+    img.classList.remove("logoinvisible")
 
 
 
