@@ -1,6 +1,10 @@
 *{
-    --content2:#2C60A7;
-    --content1: #E3E3E4;    
+    --content2:#1a4175;
+    --content1: #dedede;
+}
+
+.loader{
+    display: none;
 
 }
 
@@ -40,35 +44,41 @@ body{
 }
 
 #title{
-    line-height: 60px;
     width: 100%;
     text-align: center;
     color: var(--content2); 
-    position: absolute;
-     top: 45%; /* poussé de la moitié de hauteur du référent */
-    transform: translateY(-50%);
 }
 
 #logo{
     text-align: center;
 }
 
+.logoinvisible{
+    display: none;
+}
+.logovisible{
+    display: block;
+}
+
 #header{
-    z-index: 1000;
-    color: white;
+    z-index: 1200;
+    color:var(--content2);
+    font-weight: 500;
+    background-color: white;
+    overflow: auto;
+    border-bottom: 1px solid var(--content2);
+}
+#top{
+    background-color: var(--content1);
+
 }
 
 .sticky {
   position: fixed;
-  border-bottom: 2px solid var(--content2);
-  background-color: white;
   top: 0;
   width: 100%;
 }
 
-.nosticky{
-    background-color: transparent;
-}
 
 .sticky + .content {
   padding-top: 60px;
@@ -100,7 +110,20 @@ body{
     padding-right: 10%;
 }
 
-
+.card{
+    color: var(--content2);
+    width: 45%;
+    box-shadow: 0px 0px 1px  0px black;
+}
+.card:hover{
+    transform: scale(1.03);
+}
+ .card-title{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    font-size: 30px;
+ }
 
 .card-img-top{
     background-color: grey;
@@ -110,10 +133,10 @@ body{
 }
 
 #haut{
-    background-image: url(./389873.jpg);
     background-attachment: fixed;
     position: relative;
     height: 100%;
+    margin-bottom: 0;
 }
 
 #el1:hover, #el2:hover, #el3:hover, #el4:hover{
@@ -146,3 +169,37 @@ body{
 
 .visible{
 display: none;}
+.form-group{
+    opacity: 0.4;
+}
+.form-control{
+    background-color: black;
+    color: white;
+}
+.form-control::placeholder{
+    color: white;
+}
+#contact{
+    background-image: url("mains.jpg");
+}
+
+#faq2{
+    height: 80%;
+    color: var(--content2);
+}
+#contactSubmit{
+        background-color: black;
+        opacity: 0.4;
+        color: white;
+}
+#contactSubmit:hover{
+    opacity: 1;
+    transform: scale(1.03);
+}
+.icone{
+    color: var(--content2);
+    font-size: 60px;
+}
+.carousel-indicators{
+    
+}

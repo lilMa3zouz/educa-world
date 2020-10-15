@@ -3,14 +3,18 @@
 
 <head>
   <meta charset="UTF-8">
+     <script type="text/javascript">
+      if(document.images)
+        (new Image()).src="389873.jpg";
+    </script>
     <link href="bootstrap.min.css" rel="stylesheet">
     <link href="materialIcons.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div id="haut">
     <nav id="header" class="site-header py-2" >
+    <p id="logo" class="logovisible" style="width: 100%;text-align: center;margin-bottom: -20px;margin-top: 0;"><img src="logo.png" height="100px"></p>
       <div class="container d-flex flex-column flex-md-row justify-content-between" id="nav">
         <a id="el1" onclick="if($('#Accompagnement').length){var getOffset = $('#Accompagnement').offset().top;$('html,body').animate({scrollTop: getOffset - 60}, 500);}" class="py-2 d-none d-md-inline-block" >Accompagnement</a>
         <a id="el2" onclick="if($('#carouselExampleIndicators').length){var getOffset = $('#carouselExampleIndicators').offset().top;$('html,body').animate({scrollTop: getOffset - 140}, 500);}" class="py-2 d-none d-md-inline-block" >Tests</a>
@@ -18,104 +22,16 @@
         <a id="el4" onclick="if($('#apropos').length){var getOffset = $('#apropos').offset().top;var targetDistance = 150;$('html,body').animate({scrollTop: getOffset - targetDistance}, 500);}" class="py-2 d-none d-md-inline-block" >à propos</a>
       </div>
     </nav>
-        <div id="top" style="height: 90%;">
-          <p id="title">
-            <span style="font-size: 90px;border-radius: 10px;" class="c1" >EDUCA'WORLD </span><br>
-            <span style="font-size: 50px;border-radius: 5px;" class="c1">Savoir, Épannouissement, Persevérence</span><br>
-            <button style="font-size: 40px;" onclick="if($('#Accompagnement').length){var getOffset = $('#Accompagnement').offset().top;$('html,body').animate({scrollTop: getOffset - 60}, 500);}" type="button" class="btn btn-primary">Découvrir le projet</button>
-            <button style="font-size: 40px;" type="button"  onclick="if($('#contact').length){var getOffset = $('#contact').offset().top;var targetDistance = 20;$('html,body').animate({scrollTop: getOffset - targetDistance}, 500);}" class="btn btn-outline-dark">Contact</button>
-          </p>
-        </div>
-  </div>
-        
-        <p style="text-align: center;"><button class="material-icons navigator visible" id="toTop" style="top: 9%;right: 0;border-top: none;" >keyboard_arrow_up</button></p>
-        <p style="text-align: center;"><button class="material-icons navigator visible" id="toDown" style="bottom: 0;right:0;border-bottom: none;" >keyboard_arrow_down</button></p>
-
-        <div class="c2" style="width: 100%;overflow: auto;height: auto;" id="Accompagnement">
-            <p class="contentTitle" style="text-align: center">Accompagnement</p><br>
-            <p style="font-size: 25px;margin-left: 40px;margin-right: 40px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis tortor et erat dictum scelerisque quis sit amet nisl. </p>    
-            <div id="cards" class="d-inline-flex" style="margin-bottom: 20px;">
-                <div class="card" style="width: 30%;">
-                    <p class="card-img-top py-4" >PÉRISCOLAIRE</p>
-                    <div class="card-body">
-                      <h5 class="card-title">ssous-titre</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis </p>
-                      <a href="#" class="btn btn-primary">En savoir plus</a>
-                    </div>
-                  </div>
-                <div class="card" style="width: 30%;margin-left: 35%;">
-                    <p class="card-img-top py-4" >EXTRA-SCOLAIRE</p>
-                    <div class="card-body">
-                      <h5 class="card-title">sous-titre</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis </p>
-                      <a href="#" class="btn btn-primary">En savoir plus</a>
-                    </div>
-                  </div>
-            </div>
-        </div>
-
-            <p class="c1 contentTitle" style="text-align: center;height: auto;overflow: auto;">Tests</p>
-        <div id="carouselExampleIndicators" class="carousel slide c1" data-ride="carousel" style="height: 80%;margin-top: -20px;">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active" style="height: 100%;">
-                    <figure style="width: 100%;text-align: center; height: 100%;">
-                        <img width="20%" class="round" src="writing.jpg" style="border-radius: 100%; border: 1px solid grey;margin-top: 2px;">
-                        <figcaption style="text-align: center;font-size: 30px;"> SAT </figcaption>
-                    </figure>
-                    <p style="text-align: center;">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis tortor et erat dictum scelerisque quis sit amet nisl.<br>
-                        <button style="margin-top: 40px; height: 60px;width: 150px;font-size: 20px;" type="button" class="btn btn-primary">En savoir plus</button>
-                    </p>
-              </div>
-              <div class="carousel-item">
-                <figure style="width: 100%;text-align: center;margin-top: 0;">
-                    <img width="20%" class="round" src="writing.jpg" style="border-radius: 100%; border: 1px solid grey;margin-top: 2px;">
-                    <figcaption style="text-align: center;font-size: 30px;"> test 2 </figcaption>
-                </figure>
-                <p style="text-align: center;">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis tortor et erat dictum scelerisque quis sit amet nisl.<br>
-                    <button style="margin-top: 40px; height: 60px;width: 150px;font-size: 20px;" type="button" class="btn btn-primary">En savoir plus</button>
-                </p>
-                </div>
-              <div class="carousel-item">
-                <figure style="width: 100%;text-align: center; height: 100%;margin-top: 0;">
-                    <img width="20%" class="round" src="writing.jpg" style="border-radius: 100%; border: 1px solid grey;margin-top: 2px;">
-                    <figcaption style="text-align: center;font-size: 30px;"> test 3 </figcaption>
-                </figure>
-                <p style="text-align: center;">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis tortor et erat dictum scelerisque quis sit amet nisl.<br>
-                    <button style="margin-top: 40px; height: 60px;width: 150px;font-size: 20px;" type="button" class="btn btn-primary">En savoir plus</button>
-                </p>
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-
-        <div class="c2" id="soutien" style="width:100%;position:relative;overflow: auto;height: auto;">
-            <p style="font-size: 25px;margin-left: 0px;margin-right: 40px;margin-bottom: 0;width: 100%;">
-                <img src="images.jpg" style="float: left;" width="53%" >
-                <h1 style="width: 100%;text-align: center;height: 20%" class="py-4">SOUTENIR LE PROJET</h1>
-                <div style="float: right;margin-right: 35%">
-                    <h3>Info 1</h3>
-                    <h3>Info 2</h3>
-                    <h3>Info 3</h3>
-                </div>
+        <div id="top" style="height: 80%; ;z-index: 900;">
+          <p id="title" class="py-2">
+            <span style="font-size: 80px;" class="c1" >EDUCA'WORLD </span><br>
+            <span style="font-size: 25px;border-radius: 5px;" class="c1">Savoir, Épannouissement, Persevérence</span><br>
             </p>
         </div>
-
-        <div class="c1" id="apropos" style="width: 100%;overflow: auto;">
+        <p style="text-align: center;"><button class="material-icons navigator visible" id="toTop" style="top: 9%;right: 0;border-top: none;" >keyboard_arrow_up</button></p>
+        <p style="text-align: center;"><button class="material-icons navigator visible" id="toDown" style="bottom: 0;right:0;border-bottom: none;" >keyboard_arrow_down</button></p>
+        
+        <div class="c2" id="apropos" style="width: 100%;overflow: auto;">
             <p class="contentTitle py-4" style="text-align: center;width: 100%;">à propos de nous</p><br>
             <div class="d-flex flex-column flex-md-row" style="width: 100%;">
               <p style="font-size: 25px;width:40%;margin-left: 10%;text-align: center;">
@@ -131,28 +47,114 @@
             </div>
         </div>
 
-        <div class="c2" style="overflow: auto;width:100%;" id="contact">
+            <p class="c1 contentTitle" style="text-align: center;height: auto;overflow: auto;">Tests</p>
+        <div id="carouselExampleIndicators" class="carousel slide c1" data-ride="carousel" style="height: 80%;margin-top: -20px;">
+            <ol class="carousel-indicators" style="margin-top: 200px;">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active" style="height: 100%;">
+                    <figure style="width: 100%;text-align: center; height: 100%;">
+                        <img width="20%" class="round" src="writing.jpg" style="border-radius: 100%; border: 1px solid grey;margin-top: 2px;">
+                        <figcaption style="text-align: center;font-size: 30px;"> SAT </figcaption>
+                    </figure>
+                    <p style="text-align: center;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis tortor et erat dictum scelerisque quis sit amet nisl.<br>
+                        <button style="margin-top: 40px; height: 60px;width: 150px;font-size: 20px;" type="button" class="btn btn-outline-primary">En savoir plus</button>
+                    </p>
+              </div>
+              <div class="carousel-item">
+                <figure style="width: 100%;text-align: center;margin-top: 0;">
+                    <img width="20%" class="round" src="writing.jpg" style="border-radius: 100%; border: 1px solid grey;margin-top: 2px;">
+                    <figcaption style="text-align: center;font-size: 30px;"> test 2 </figcaption>
+                </figure>
+                <p style="text-align: center;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis tortor et erat dictum scelerisque quis sit amet nisl.<br>
+                    <button style="margin-top: 40px; height: 60px;width: 150px;font-size: 20px;" type="button" class="btn btn-outline-primary">En savoir plus</button>
+                </p>
+                </div>
+              <div class="carousel-item">
+                <figure style="width: 100%;text-align: center; height: 100%;margin-top: 0;">
+                    <img width="20%" class="round" src="writing.jpg" style="border-radius: 100%; border: 1px solid grey;margin-top: 2px;">
+                    <figcaption style="text-align: center;font-size: 30px;"> test 3 </figcaption>
+                </figure>
+                <p style="text-align: center;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis tortor et erat dictum scelerisque quis sit amet nisl.<br>
+                    <button style="margin-top: 40px; height: 60px;width: 150px;font-size: 20px;" type="button" class="btn btn-outline-primary">En savoir plus</button>
+                </p>
+              </div>
+            </div>
+            <a class="carousel-control-prev"  href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span aria-hidden="true" ></span>
+              <span class="material-icons icone">keyboard_arrow_left</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span aria-hidden="true"></span>
+              <span class="material-icons icone">keyboard_arrow_right</span>
+            </a>
+          </div>
+          <div class="c2" style="width: 100%;overflow: auto;height: auto;" id="Accompagnement">
+            <p class="contentTitle" style="text-align: center;margin-top: 60px;" id="accompagnementTitle">Accompagnement</p><br>
+            <p style="font-size: 25px;margin-left: 40px;margin-right: 40px;" id="accompagnementContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis tortor et erat dictum scelerisque quis sit amet nisl. </p>    
+            <div id="cards" class="d-inline-flex" style="margin-bottom: 70px;">
+                <div class="card" id="card1">
+                    <p class="py-4 card-title" >PÉRISCOLAIRE</p>
+                    <div class="card-body">
+                      <h5 class="card-subtitle">ssous-titre</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis </p>
+                    </div>
+                  </div>
+                <div class="card" style="margin-left: 10%;" id="card2">
+                    <p class="py-4 card-title" >EXTRA-SCOLAIRE</p>
+                    <div class="card-body">
+                      <h5 class="card-subtitle">sous-titre</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis </p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+        <div class="c1" id="soutien" style="width:100%;position:relative;overflow: auto;height: auto;">
+            <p style="font-size: 25px;margin-left: 0px;margin-right: 40px;margin-bottom: 0;width: 100%;">
+                <img src="mains2.jpg" style="float: right;" width="53%" >
+                <h1 style="width: 100%;text-align: center;height: 20%" class="py-4">SOUTENIR LE PROJET</h1>
+                <div style="float: right;margin-left: 0;">
+                    <h3>Info 1</h3>
+                    <h3>Info 2</h3>
+                    <h3>Info 3</h3>
+                </div>
+            </p>
+        </div>
+
+        <div class="" style="overflow: auto;width:100%;color: var(--content2)" id="contact">
           <p class="contentTitle py-1" style="text-align:center"> Nous contacter</p>
-          <form class="bg-light" style="width: 50%; height:80%;margin-left: 25%;border-radius: 20px;margin-bottom: 20px;">
+          <form style="width: 50%; height:80%;margin-left: 25%;border-radius: 20px;margin-bottom: 20px; background-color: transparent;">
             <div class="form-group">
-              <label style="margin-top: 20px;" for="exampleFormControlInput1">adresse E-mail (pour vous répondre)</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nom@domaine.com">
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="adresse E-mail (pour vous répondre)">
             </div>
             <div class="form-group">
-              <label for="exampleFormControlInput1">Age</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="28">
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Age">
             </div>
             <div class="form-group">
-              <label for="exampleFormControlTextarea1">Question/renseignement</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+              <textarea class="form-control"  id="exampleFormControlTextarea1" rows="6" placeholder="Question/renseignement"></textarea>
             </div>
-            <button type="submit" style="margin-left: 45%;margin-bottom: 20px;" class="btn btn-primary">Envoyer</button>
+            <button type="submit" style="margin-left: 45%;margin-bottom: 20px;" id="contactSubmit" class="btn btn-outline-dark">Envoyer</button>
+
           </form>
         </div>
 
-        <script src="jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>        
-        <script src="popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <div id="faq1"><!-- ajouter image najoua...!-->
+        <p style="width: 100%;text-align: center;">FAQ<br>Vos questions,nos réponses</p>
+        </div>
+        <div id="faq2" class="c1">
+        <p style="margin-left: 10%;margin-right: 10%;text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed ex vitae sapien gravida venenatis. Nunc tellus neque, egestas porta metus tempus, placerat egestas enim. Duis sagittis interdum dictum. Donec consectetur nisi suscipit lorem vestibulum egestas. Vestibulum eget dignissim ipsum. Praesent ac congue augue. Curabitur hendrerit quis nulla euismod semper. Sed et metus vel elit rutrum cursus eu interdum erat. Etiam nec libero nunc.</p>
+        </div>
+
+        <script src="jquery-3.5.1.js"></script>        
+        <script src="popper.min.js"></script>
+        <script src="bootstrap.min.js"></script>
         <script src="script.js"></script>
 
     </body>

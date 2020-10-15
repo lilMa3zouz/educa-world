@@ -1,46 +1,78 @@
 var navbar = document.getElementById("header");
 var buttons = [document.getElementById("toTop"),document.getElementById("toDown")]
-var img = document.getElementById("top");
-var sticky = img.offsetTop;
-
-
+var img = document.getElementById("logo");
+var sticky = navbar.offsetTop;
 window.onscroll = function() {
-  if (window.pageYOffset >= sticky) {
+  if (window.pageYOffset >= img.offsetTop) {
     navbar.classList.add("sticky")
-    navbar.classList.remove("nosticky")
-    navbar.classList.add("text-primary")
-    buttons.forEach(element => element.classList.remove("visible"))
+    img.classList.add("logovisible")
+    img.classList.remove("logoinvisible")
 
-
-  } else {
+    //buttons.forEach(element => element.classList.remove("visible"))
+  } 
+  else {
     navbar.classList.remove("sticky");
-    navbar.classList.add("nosticky")
-    navbar.classList.remove("text-primary")
-    buttons.forEach(element => element.classList.add("visible"))
-  }
+    img.classList.remove("logovisible")
+    img.classList.add("logoinvisible")
 
+
+
+    //buttons.forEach(element => element.classList.add("visible"))
+  }
 };
-var actual = ["#accompagnement","#carouselExampleIndicators","#soutien","#apropos","#contact"]
-var n = 0
+function getPositionXY(element) { 
+  var rect = element.getBoundingClientRect(); 
+  resp = {x: rect.x, y: rect.y}
+  return resp
+}
+var actual = ["Accompagnement","carouselExampleIndicators","soutien","apropos","contact"]
+let actualDiv;
 document.getElementById("toDown").onclick = function(){
-  n=n+1
-  element = actual[n]
-  if($(element).length){
-  var getOffset = $(element).offset().top;
-  $('html,body').animate({
-  scrollTop: getOffset - 100
-  }, 500)
+  position = getPositionXY(document.getElementById("toDown"))
+  divPosition = document.elementFromPoint(position.x - 50, position.y - 150)
+  if(actual.includes(divPosition.id)){
+    actualDiv = divPosition.id
+  }
+  else{
+    collection = $(divPosition).parents().toArray()
+    collection.forEach(function(el){
+    if(actual.includes(el.id)){
+    actualDiv = el.id
+    }
+  })
+  }
+  if(actualDiv!="contact"){
+    futurDiv = "#" + actual[actual.indexOf(actualDiv)+1]
+    if($(futurDiv).length){
+      var getOffset = $(futurDiv).offset().top;
+
+      $('html,body').animate({scrollTop: getOffset - 150}, 500)} 
   }
 }
 document.getElementById("toTop").onclick = function(){
-  if(n!=0){
-    n=n-1
-  element = actual[n]
-  if($(element).length){
-  var getOffset = $(element).offset().top;
-  $('html,body').animate({
-  scrollTop: getOffset 
-  }, 500)
+  position = getPositionXY(document.getElementById("toTop"))
+  divPosition = document.elementFromPoint(position.x - 50, position.y )
+  if(actual.includes(divPosition.id)){
+    actualDiv = divPosition.id
   }
+  else{
+    collection = $(divPosition).parents().toArray()
+    collection.forEach(function(el){
+    if(actual.includes(el.id)){
+    actualDiv = el.id
+    }
+  })
+  }
+  if(actualDiv!="Accompagnement"){
+    futurDiv = "#" + actual[actual.indexOf(actualDiv)-1]
+    if($(futurDiv).length){
+      var getOffset = $(futurDiv).offset().top; 
+      $('html,body').animate({scrollTop: getOffset}, 500)} 
   }
 }
+
+/* TODO:
+#haut -> site-educa1
+chercher image site-educa6
+card = button (A outline)
+*/
