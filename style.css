@@ -49,10 +49,6 @@ body{
     color: var(--content2); 
 }
 
-#logo{
-    text-align: center;
-}
-
 .logoinvisible{
     display: none;
 }
@@ -120,7 +116,7 @@ body{
     box-shadow: 0px 0px 6px  1px black;
 }
 .card:hover{
-    transform: scale(1.03);
+
 }
  .card-title{
     width: 100%;
@@ -187,7 +183,6 @@ display: none;}
     background-image: url("write-593333_1920.jpg");
     background-size: 100% 100%;
     height: 75%;
-    overflow: hidden;
     width:100%;
     color: var(--content2);
 }
@@ -202,8 +197,8 @@ display: none;}
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 65%;
-    overflow: auto;
+    height: 90%;
+    overflow: hidden;
     width:100%;
     color: var(--content2);
 }
@@ -219,7 +214,8 @@ display: none;}
     padding-bottom: 30px;
 }
 #faq2{
-    height: 60%;
+    height: auto;
+    overflow: auto;
     color: var(--content2);
 }
 #contactSubmit{

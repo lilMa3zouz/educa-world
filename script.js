@@ -3,17 +3,6 @@ var cible = document.getElementById("ecole");
 var buttons = [document.getElementById("toTop"),document.getElementById("toDown")]
 var img = document.getElementById("logo");
 var sticky = navbar.offsetTop;
-window.onscroll = function() {
-  if (window.pageYOffset >= document.getElementById("ecole").offsetTop) {
-    img.classList.add("logoinvisible")
-    img.classList.remove("logovisible")
-    console.log(navbar.style.minHeight)
-  } 
-  else {
-    img.classList.add("logovisible")
-    img.classList.remove("logoinvisible")
-  }
-};
 function getPositionXY(element) { 
   var rect = element.getBoundingClientRect(); 
   resp = {x: rect.x, y: rect.y}
