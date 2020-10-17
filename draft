@@ -21,3 +21,15 @@ window.onscroll = function() {
     //img.classList.remove("logoinvisible")
   }
 };
+
+<div id="faq2" class="c1 d-flex flex-column flex-md-row justify-content-between">
+            <p class="question">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. DUIS SED EX VITAE SAPIEN GRAVIDA VENENATIS? <br>
+              <span class="reponse">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sodales, mi vitae varius luctus, felis neque lobortis augue, fermentum hendrerit ex libero</span>
+            </p>
+            <p class="question">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. DUIS SED EX VITAE SAPIEN GRAVIDA VENENATIS? <br>
+              <span class="reponse">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sodales, mi vitae varius luctus, felis neque lobortis augue, fermentum hendrerit ex libero</span>
+            </p>
+            <p class="question">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. DUIS SED EX VITAE SAPIEN GRAVIDA VENENATIS? <br>
+              <span class="reponse">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sodales, mi vitae varius luctus, felis neque lobortis augue, fermentum hendrerit ex libero</span>
+            </p>
+          </div>
