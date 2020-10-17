@@ -1,24 +1,3 @@
-svg {
-    height: 90vh;
-    margin: auto;
-    display: block;
-  }
-  
-  path {
-    stroke-linecap: round;
-    stroke-width: 2;
-  }
-  
-  path.grey {
-    stroke: lightgrey;
-  }
-  
-  path.purple {
-    stroke: purple;
-    stroke-dasharray: calc(40 * 3.142 * 1.85);
-    stroke-dashoffset: 20;
-    /* adjust last number for variance */
-  }
 
 *{
     --content2:#1a4175;
@@ -54,6 +33,7 @@ body{
 #corp{
     position: absolute;
     top: 10%;
+    bottom: 0;
 }
 /* -------------------------------------------------------------------- */
 #header{
@@ -177,20 +157,15 @@ figure{
 /* -------------------------------------------------------------------- */
 
 #faq1{
-    background-image: url("laptop-2548105_19202.jpg");
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 90%;
-    overflow: hidden;
     width:100%;
+    height: 60%;
+    background-color: var(--content2);
     color: var(--content2);
 }
 #faq1p{
+    transform: translateY(40%);
     width: 40%;
     text-align: center;
-    transform: translateY(50%);
-    overflow: hidden;
     font-size: 40px;
     margin-left: 30%;
     margin-right: 30%;
@@ -215,10 +190,10 @@ figure{
 
 
 #contact{
-    background-image: url("write-593333_1920.jpg");
-    background-size: 100% 100%;
-    height: 75%;
+    background-color: var(--content2);
+    height: 70%;
     width:100%;
+    margin-top: 0;
     color: var(--content2);
 }
 #contactForm{
