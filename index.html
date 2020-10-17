@@ -13,9 +13,9 @@
 </head>
 
 <body>
-    <nav id="header" class="site-header sticky py-2" >
+    <nav id="header" class="site-header sticky py-2 navbar navbar-expand-sm" >
      <div class="container d-flex flex-column flex-md-row justify-content-between" id="nav">
-        <p id="logo" ><img src="logo.png" height="70px"></p>
+        <img id="logo" src="logo.png" height="70px">
         <a id="el4" onclick="if($('#apropos').length){var getOffset = $('#apropos').offset().top;var targetDistance = 150;$('html,body').animate({scrollTop: getOffset - targetDistance}, 500);}" class="py-4 d-none d-md-inline-block" >à propos</a>
         <a id="el2" onclick="if($('#carouselExampleIndicators').length){var getOffset = $('#carouselExampleIndicators').offset().top;$('html,body').animate({scrollTop: getOffset - 140}, 500);}" class="py-4 d-none d-md-inline-block" >Tests</a>
         <a id="el1" onclick="if($('#Accompagnement').length){var getOffset = $('#Accompagnement').offset().top;$('html,body').animate({scrollTop: getOffset - 60}, 500);}" class="py-4 d-none d-md-inline-block" >Accompagnement</a>
