@@ -62,12 +62,11 @@ body{
     font-weight: 500;
     background-color: white;
     overflow: hidden;
-    height: 15%;
+    height: auto;
     border-bottom: 1px solid var(--content2);
 }
 #top{
     background-color: var(--content1);
-    margin-top: 7%;
     height: auto;
     z-index: 900;
     overflow: auto;
@@ -166,7 +165,8 @@ body{
 }
 
 .visible{
-display: none;}
+    display: none;
+}
 .form-group{
     opacity: 0.4;
 }
