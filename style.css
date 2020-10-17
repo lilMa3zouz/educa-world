@@ -1,13 +1,47 @@
+svg {
+    height: 90vh;
+    margin: auto;
+    display: block;
+  }
+  
+  path {
+    stroke-linecap: round;
+    stroke-width: 2;
+  }
+  
+  path.grey {
+    stroke: lightgrey;
+  }
+  
+  path.purple {
+    stroke: purple;
+    stroke-dasharray: calc(40 * 3.142 * 1.85);
+    stroke-dashoffset: 20;
+    /* adjust last number for variance */
+  }
+
 *{
     --content2:#1a4175;
     --content1: #dedede;
 }
-
-.loader{
+.visible{
     display: none;
-
 }
-
+.c2{
+    background-color: var(--content2);
+    color: var(--content1);
+    z-index: 900;
+}
+.c1{
+    background-color: var(--content1);
+    z-index: 900;
+    color: var(--content2);
+}
+.contentTitle{
+    font-size:60px;
+    text-align: center;
+    width: 100%;
+}
 body{
     position: absolute;
     height: 100%;
@@ -17,91 +51,82 @@ body{
     left: 0;
     right: 0;
 }
-
-.c1{
-    background-color: var(--content1);
-    z-index: 900;
-    color: var(--content2);
+#corp{
+    position: absolute;
+    top: 10%;
 }
-
-.c2{
-    background-color: var(--content2);
-    color: var(--content1);
-    z-index: 900;
-
-
-}
-
-.contentTitle{
-    font-size:60px;
-}
-
-.page{
-    padding-top: 3%;
-    margin: 0 auto;
-    height: 70%;
-    width: 100%;
-}
-
-#title{
-    width: 100%;
-    text-align: center;
-    color: var(--content2); 
-}
-
-.logoinvisible{
-    display: none;
-}
-.logovisible{
-    display: block;
-}
-
+/* -------------------------------------------------------------------- */
 #header{
     z-index: 1200;
     color:var(--content2);
     font-weight: 500;
     background-color: white;
     overflow: hidden;
-    height: auto;
+    height: 10%;
     border-bottom: 1px solid var(--content2);
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}  
+#logo{
+    width: 150px;
+    margin-left: 0;
+    border-right: 1px solid grey;
+}
+#el1:hover, #el2:hover, #el3:hover, #el4:hover{
+    text-decoration: underline;
 }
 #top{
     background-color: var(--content1);
     height: auto;
     z-index: 900;
     overflow: auto;
-
 }
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-
-.sticky + .content {
-  padding-top: 60px;
-}
-
-#educaTitle{
+#title{
     width: 100%;
-    height: 100%;
-    color:var(--content2);
+    text-align: center;
+    color: var(--content2); 
+}
+/* -------------------------------------------------------------------- */
+
+.aproposContent{
+    font-size: 25px;
+    width:40%;
     text-align: center;
 }
 
-#prezText{
-    margin: 0;
-    margin-right: 40px;
-    margin-left: 100px;
-    height: 70%;
+/* -------------------------------------------------------------------- */
+
+#tests{
+    text-align: center;
+    height: auto;
+    overflow: auto;
+}
+.carousel-indicators{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: var(--content1);
+}
+figure{
+    width: 100%;
+    text-align: center; 
+    height: 100%;
+    margin-top: 0;
+}
+.icone{
+    color: var(--content2);
+    font-size: 60px;
 }
 
-.writing{
-    border-radius: 150px;
-}
+/* -------------------------------------------------------------------- */
 
+#Accompagnement{
+    width: 100%;
+    overflow: auto;
+    height: auto;
+}
 #cards{
     width: 100%;    
     margin-bottom: 20px;    
@@ -109,7 +134,6 @@ body{
     padding-left: 10%;
     padding-right: 10%;
 }
-
 .card{
     color: var(--content2);
     width: 45%;
@@ -121,80 +145,37 @@ body{
     text-align: center;
     font-size: 30px;
  }
-
 .card-img-top{
     background-color: grey;
     font-size: 30px;
     height: 100px;
     text-align: center;
 }
-
-#haut{
-    background-attachment: fixed;
-    position: relative;
-    height: 100%;
-    margin-bottom: 0;
-}
-
-#el1:hover, #el2:hover, #el3:hover, #el4:hover{
-    text-decoration: underline;
-} 
-
-#discover{    
-    text-align: center;
-    position: absolute;
-    top: 50%;    
+.cardContent{
     width: 100%;
+    height: 100%;
+}
+.cardContent:hover{
+    transform: scale(1.03);
+    cursor: pointer;
 }
 
-.form-group{
-    width: 70%;
-    margin-left: 20%;
-}
-.navigator{
-    outline: none !important;
-    position: fixed;
-    z-index: 1000;
-    width: 90px;
-    border: 2px solid grey;
-    height: 55px;
-    font-size: 35px;
-}
-.navigator:active{
-    transform: scale(0.95);
-}
+/* -------------------------------------------------------------------- */
 
-.visible{
-    display: none;
-}
-.form-group{
-    opacity: 0.4;
-}
-.form-control{
-    background-color: black;
-    color: white;
-}
-.form-control::placeholder{
-    color: white;
-}
-#logo{
-    width: 150px;
-    margin-left: 0;
-    border-right: 1px solid grey;
-}
-#contact{
-    background-image: url("write-593333_1920.jpg");
-    background-size: 100% 100%;
-    height: 75%;
+#soutien{
     width:100%;
-    color: var(--content2);
+    position:relative;
+    overflow: auto;
+    height: auto;
 }
-#contactForm{
-    width: 50%;
-    height:80%;
-    margin-left: 23%;
-    border-radius: 20px;
+#soutienTitle{
+    width: 100%;
+    text-align: center;
+    height: 20%
 }
+
+/* -------------------------------------------------------------------- */
+
 #faq1{
     background-image: url("laptop-2548105_19202.jpg");
     background-position: top;
@@ -221,6 +202,45 @@ body{
     overflow: auto;
     color: var(--content2);
 }
+.question{
+    font-size: 30px;
+    margin-top: 40px;
+    width: 30%;
+}
+.reponse{
+    font-size: 25px;
+}
+
+/* -------------------------------------------------------------------- */
+
+
+#contact{
+    background-image: url("write-593333_1920.jpg");
+    background-size: 100% 100%;
+    height: 75%;
+    width:100%;
+    color: var(--content2);
+}
+#contactForm{
+    width: 50%;
+    height:80%;
+    margin-left: 23%;
+    border-radius: 20px;
+}
+.form-group{
+    width: 70%;
+    margin-left: 20%;
+}
+.form-group{
+    opacity: 0.4;
+}
+.form-control{
+    background-color: black;
+    color: white;
+}
+.form-control::placeholder{
+    color: white;
+}
 #contactSubmit{
         background-color: black;
         opacity: 0.4;
@@ -229,21 +249,4 @@ body{
 #contactSubmit:hover{
     opacity: 1;
     transform: scale(1.03);
-}
-.icone{
-    color: var(--content2);
-    font-size: 60px;
-}
-.carousel-indicators{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background-color: var(--content1);
-}
-.question{
-    font-size: 30px;
-    margin-top: 40px;
-    width: 30%;
-}
-.reponse{
-    font-size: 25px;
 }
