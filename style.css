@@ -206,9 +206,8 @@ figure{
 }
 
 /* -------------------------------------------------------------------- */
-
 #contact{
-    background-color: var(--content2);
+    background-color: var(--content1);
     background-size: cover;
     height: auto;
     width:100%;
@@ -242,4 +241,13 @@ figure{
 #contactSubmit:hover{
     opacity: 1;
     transform: scale(1.03);
+}
+
+/* //////////////////////////////////////////////////////////////////////////////*/
+.gm{
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 20px;
+    margin-top: 2.5%;
+    color: var(--content1);
 }
