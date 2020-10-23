@@ -46,7 +46,7 @@ body{
 }
 .sticky {
     position: fixed;
-    height: 10%;
+    height: 12.5%;
     top: 0;
     width: 100%;
 }  
