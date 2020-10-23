@@ -52,7 +52,8 @@ body{
 }  
 #logo{
     border-right: 1px solid grey;
-    padding-right: 35px;
+    margin-left: 20px;
+    padding-right: 2%;
 }
 #el1:hover, #el2:hover, #el3:hover, #el4:hover{
     text-decoration: underline;
@@ -119,6 +120,33 @@ figure{
     width: 100%;
     height: 100%;
 }
+
+.fleches2{
+    height: 30px; 
+    width:30px;
+    margin-top:8px;
+}
+.outlineC2{
+    background-color: transparent;
+    border: 1.5px solid var(--content2);
+    color: var(--content2);
+}
+.outlineC2:hover{
+    animation: C2gradient 1000ms;
+    color: white;
+    background-color: var(--content2) 
+}
+@keyframes C2gradient{
+    From{
+        background-color: transparent;
+        color: var(--content2);
+
+    }
+    To{
+        background-color: var(--content2);
+        color: white;
+    }
+}
 /* -------------------------------------------------------------------- */
 
 #Accompagnement{
@@ -153,10 +181,22 @@ figure{
 .cardContent{
     width: 100%;
     height: 100%;
+    
 }
 .cardContent:hover{
-    transform: scale(1.03);
-    cursor: pointer;
+    animation: progressZoom 1.02s;
+    transform: scale(1.048) translateZ(0);
+}
+
+@keyframes progressZoom{
+    From{
+        backface-visibility: hidden;
+        transform: scale(1.00);
+    }
+    To{
+        transform: scale(1.048) translateZ(0);
+        
+    }
 }
 
 /* -------------------------------------------------------------------- */
@@ -171,6 +211,9 @@ figure{
     width: 100%;
     text-align: center;
     height: 20%
+}
+.snet{
+    margin-right: 50px;
 }
 
 /* -------------------------------------------------------------------- */
@@ -224,23 +267,43 @@ figure{
     margin-left: 20%;
 }
 .form-group{
-    opacity: 0.4;
 }
 .form-control{
-    background-color: black;
+    border: 1.5px solid rgba(255,255,255,0.4);
+    background-color: rgba(0,0,0,0.4);
     color: white;
+}
+.form-control:focus{
+    border: 1.7px solid rgba(255,255,255,0.45);
+    
 }
 .form-control::placeholder{
     color: white;
-}
-#contactSubmit{
-    background-color: black;
     opacity: 0.4;
-    color: white;
 }
+
 #contactSubmit:hover{
     opacity: 1;
     transform: scale(1.03);
+}
+.outlineBlack{
+    background-color: black;
+    border: 2px solid rgba(255,255,255,0.4);
+    color: white;
+    opacity: 0.4;
+}
+.outlineBlack:hover{
+    animation: blackGradient 1200ms;
+    color: white;
+    background-color: black 
+}
+@keyframes blackGradient{
+    From{
+        opacity: 0.4;
+    }
+    To{
+        opacity: 1.0;
+    }
 }
 
 /* //////////////////////////////////////////////////////////////////////////////*/

@@ -14,14 +14,16 @@
 
 <body>
     <nav id="header" class="site-header sticky py-2 navbar navbar-expand-sm" >
+      <img id="logo" src="logo.png" height="70px">
      <div class="container d-flex flex-column flex-md-row justify-content-between" id="nav">
-        <img id="logo" src="logo.png" height="70px">
-        <a id="el4" onclick="if($('#apropos').length){var getOffset = $('#apropos').offset().top;var targetDistance = 150;$('html,body').animate({scrollTop: getOffset - targetDistance}, 500);}" class="py-4 d-none d-md-inline-block" >à propos</a>
+        <a id="el4" onclick="if($('#apropos').length){var getOffset = $('#apropos').offset().top;var targetDistance = 150;$('html,body').animate({scrollTop: getOffset - targetDistance}, 500);}" class="py-4 d-none d-md-inline-block" >Notre mission</a>
         <a id="el2" onclick="if($('#carouselExampleIndicators').length){var getOffset = $('#carouselExampleIndicators').offset().top;$('html,body').animate({scrollTop: getOffset - 140}, 500);}" class="py-4 d-none d-md-inline-block" >Tests</a>
         <a id="el1" onclick="if($('#Accompagnement').length){var getOffset = $('#Accompagnement').offset().top;$('html,body').animate({scrollTop: getOffset - 60}, 500);}" class="py-4 d-none d-md-inline-block" >Accompagnement</a>
         <a id="el3" onclick=" if($('#soutien').length){var getOffset = $('#soutien').offset().top;var targetDistance = 20;$('html,body').animate({scrollTop: getOffset - 200}, 500);}" class="py-4 d-none d-md-inline-block" >Nous soutenir</a>
-        <a id="el3" onclick=" if($('#contact').length){var getOffset = $('#contact').offset().top;var targetDistance = 20;$('html,body').animate({scrollTop: getOffset - 200}, 500);}" class="py-4 d-none d-md-inline-block" >Nous contacter</a>
         <a id="el3" onclick=" if($('#faq1').length){var getOffset = $('#faq1').offset().top;var targetDistance = 20;$('html,body').animate({scrollTop: getOffset - 200}, 500);}" class="py-4 d-none d-md-inline-block" >FAQ</a>
+        <a id="el3" onclick=" if($('#partenaires').length){var getOffset = $('#partenaires').offset().top;var targetDistance = 20;$('html,body').animate({scrollTop: getOffset - 200}, 500);}" class="py-4 d-none d-md-inline-block" >Partenaires</a>
+        <a id="el3" onclick=" if($('#contact').length){var getOffset = $('#contact').offset().top;var targetDistance = 20;$('html,body').animate({scrollTop: getOffset - 200}, 500);}" class="py-4 d-none d-md-inline-block" >Nous contacter</a>
+
       </div>
     </nav>
         <div id="corp">
@@ -33,7 +35,7 @@
             </p>
           </div>
           <div class="c2" id="apropos" style="width: 100%;overflow: auto;">
-              <p class="contentTitle py-4">à propos de nous</p><br>
+              <p class="contentTitle py-4">Notre mission</p><br>
               <div class="d-flex flex-column flex-md-row" style="width: 100%;">
                 <p class="aproposContent" style="margin-left: 10%;">
                   <span style="font-size: 40px;">titre</span><br>
@@ -58,7 +60,7 @@
                       </figure>
                       <p style="text-align: center;">
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis tortor et erat dictum scelerisque quis sit amet nisl.<br>
-                          <button style="margin-top: 40px; height: 60px;width: 150px;font-size: 20px;" type="button" class="btn btn-outline-primary">En savoir plus</button>
+                          <button style="margin-top: 40px; height: 60px;width: 150px;font-size: 20px;" type="button" class="btn outlineC2">En savoir plus</button>
                       </p>
                 </div>
                 <div class="carousel-item">
@@ -68,19 +70,16 @@
                   </figure>
                   <p style="text-align: center;">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis tortor et erat dictum scelerisque quis sit amet nisl.<br>
-                      <button style="margin-top: 40px; height: 60px;width: 150px;font-size: 20px;" type="button" class="btn btn-outline-primary">En savoir plus</button>
+                      <button style="margin-top: 40px; height: 60px;width: 150px;font-size: 20px;" type="button" class="btn outlineC2">En savoir plus</button>
                   </p>
                   </div>
               </div>
               <a class="carousel-control-prev"  id="controlLeft" href="#carouselExampleIndicators" role="button" data-slide="prev" >
-              <div><div class="ldio-84lxrpe6gsk">
-              <div id="circleLeft" class="circle"></div>
-              <div><img class="fleche" style="margin-left: 6px;margin-top: 10px;" src="angle-left-icon_2.svg" width="30px"><div></div></div></div></div>
+                <div style="width:50px" id="circleLeft"></div>
               </a>
+              
               <a class="carousel-control-next" id="controlRight" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <div><div class="ldio-84lxrpe6gsk">
-              <div id="circleRight" class="circle"></div>
-              <div><img class="fleche" src="angle-right-icon_2.svg" style="margin-left: 12px;margin-top: 10px;" width="30px"><div></div></div></div></div>
+                <div style="z-index: 100000;width:50px" id="circleRight"></div>  
               </a>
               <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -116,16 +115,19 @@
           <div class="c1" id="soutien">
               <p style="font-size: 25px;margin-left: 0px;margin-right: 40px;margin-bottom: 0;width: 100%;">
                   <img src="https://www.yeoandyeo.com/wp-content/uploads/Solicit-with-the-State-of-Michigan-scaled.jpeg" style="float: right;" width="53%" >
-                  <div style="height: 80%;margin-top: 5%;margin-bottom: 5%;">
-                    <h1 id="soutienTitle" class="py-4">SOUTENIR LE PROJET</h1>
-                  <p style="text-align: center;font-size: 25px;line-height: 50px;">
+                  <div style="height: 80%;margin-top: 2%;margin-bottom: 5%;">
+                    <h1 id="soutienTitle" class="py-3">SOUTENIR LE PROJET</h1>
+                  <p style="text-align: center;font-size: 25px;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dictum libero eget lectus efficitur luctus. Pellentesque dictum libero dictum
+                  </p>
+                  <p style="text-align: center;font-size: 25px;">
                     Crowdfunding: <a id="crowd" href="#" style="color:#1a4175;">lien 1</a> - <a id="crowd" href="#" style="color:#1a4175;">lien 2</a><br>
                     <a href="mailto:m.mazouz@gmail.com" style="color:#1a4175;">m.mazouz@gmail.com</a>
                   </p>
-                  <p class="flex-md-row justify-content-between" style="width: 100%;text-align: center;">
-                    <img src="facebook-app-symbol.svg" height="50px">
-                    <img src="Twitter_Bird.svg" height="50px">
-                    <img src="instagram.svg" height="50px">                    
+                  <p class="flex-md-row" style="width: 50%;text-align: center;position: absolute;bottom: 0;left: 0;">
+                    <a target="_blank" href="https://www.facebook.com/RassemblementNational/"><img class="snet" src="facebook-app-symbol.svg" height="50px"></a>
+                    <a target="_blank" href="https://twitter.com/RNational_off"><img class="snet" src="Twitter_Bird.svg" height="50px"></a>
+                    <a target="_blank" href="https://www.instagram.com/rassemblementnational_fr/"><img class="snet" src="instagram.svg"  height="50px"></a>                    
                   </p>
                   </div>
               </p>
@@ -195,13 +197,13 @@
               <div class="form-group">
                 <textarea class="form-control"  id="exampleFormControlTextarea1" rows="6" placeholder="Question/renseignement"></textarea>
               </div>
-              <button type="submit" style="margin-left: 45%;margin-bottom: 20px;" id="contactSubmit" class="btn btn-outline-dark">Envoyer</button>
+              <button type="submit" style="margin-left: 45%;margin-bottom: 20px;" id="contactSubmit" class="btn outlineBlack">Envoyer</button>
             </form>
             </div>
           </div>
         </div>
-
-        <script src="jquery-3.5.1.js"></script>        
+        <script src="jquery-3.5.1.js"></script>
+        <script src="progressBar.js"></script>        
         <script src="popper.min.js"></script>
         <script src="bootstrap.min.js"></script>
         <script src="script.js"></script>
