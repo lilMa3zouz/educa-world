@@ -64,10 +64,18 @@ body{
     z-index: 900;
     overflow: auto;
 }
+#searchField{
+    border-color: var(--content2);
+}
 #title{
     width: 100%;
     text-align: center;
     color: var(--content2); 
+}
+#connect{
+    border-color: var(--content2);
+    background-color: var(--content2);
+    color: white;
 }
 /* -------------------------------------------------------------------- */
 
@@ -266,16 +274,16 @@ figure{
     width: 70%;
     margin-left: 20%;
 }
-.form-control{
+.contactField{
     border: 1.5px solid rgba(255,255,255,0.4);
     background-color: rgba(0,0,0,0.4);
     color: white;
 }
-.form-control:focus{
+.contactField:focus{
     border: 1.7px solid rgba(255,255,255,0.45);
     
 }
-.form-control::placeholder{
+.contactField::placeholder{
     color: white;
     opacity: 0.4;
 }

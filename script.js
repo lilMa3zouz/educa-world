@@ -10,26 +10,8 @@ function getPositionXY(element) {
 }
 var actual = ["Accompagnement","carouselExampleIndicators","soutien","apropos","contact"]
 let actualDiv;
-//ldio-84lxrpe6gsk 1.36986301369863s linear
-/*document.getElementById("controlLeft").onmouseover = function(){
-$("#circleLeft").css("animation","ldio-84lxrpe6gsk 1.36986301369863s linear infinite")
-$("#circleLeft").css("display","block")
-}
-document.getElementById("controlLeft").onmouseout = function(){
-$("#circleLeft").css("animation","")
-$("#circleLeft").css("display","none")
-}
-document.getElementById("controlRight").onmouseover = function(){
-$("#circleRight").css("animation","ldio-84lxrpe6gsk 1.36986301369863s linear infinite")
-$("#circleRight").css("display","block")
-}
-document.getElementById("controlRight").onmouseout = function(){
-$("#circleRight").css("animation","")
-$("#circleRight").css("display","none")
-}*/
-
 var circleLeft = new ProgressBar.Circle("#circleLeft", {
-  strokeWidth: 6,
+  strokeWidth: 3,
   easing: 'easeInOut',
   duration: 600,
   color: '#1a4175',
@@ -43,7 +25,7 @@ var circleLeft = new ProgressBar.Circle("#circleLeft", {
 });
 
 var circleRight = new ProgressBar.Circle("#circleRight", {
-  strokeWidth: 6,
+  strokeWidth: 3,
   easing: 'easeInOut',
   duration: 600,
   color: '#1a4175',
