@@ -60,7 +60,7 @@ body{
 }
 #top{
     background-color: var(--content1);
-    height: auto;
+    height: 90%;
     z-index: 900;
     overflow: auto;
 }
