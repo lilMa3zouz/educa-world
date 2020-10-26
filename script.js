@@ -50,3 +50,6 @@ document.getElementById("controlRight").onmouseover = function(){
 document.getElementById("controlRight").onmouseleave = function(){
   circleRight.animate(0.0); 
 }
+//<span style="font-size: 80px;" class="c1" >EDUCA'WORLD </span><br>
+              //<span style="font-size: 25px;border-radius: 5px;" class="c1">Savoir, Épannouissement, Persevérence</span><br>
+              

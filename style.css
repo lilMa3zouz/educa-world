@@ -67,17 +67,42 @@ body{
 #searchField{
     border-color: var(--content2);
 }
-#title{
-    width: 100%;
-    text-align: center;
-    color: var(--content2); 
-}
+
 
 #connectDiv:hover{
     transform: scale(0.95);
 }
 #connect:active{
     transform: scale(0.90);
+}
+#citation{
+  color: var(--content2);
+  font-size: 30px;
+}
+.typewriter{
+  text-align: center;
+  overflow: hidden;
+  border-right: .15em solid black; 
+  white-space: nowrap;
+  font-style: italic;
+  max-width: fit-content;
+  margin: 0 auto;
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 4.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 80% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--content2); }
 }
 /* -------------------------------------------------------------------- */
 
