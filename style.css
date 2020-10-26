@@ -72,13 +72,7 @@ body{
     text-align: center;
     color: var(--content2); 
 }
-#connect{
-    outline:none;
-    border:none;
-    width: auto;
-    font-size: 55px;
-    color: var(--content2);
-}
+
 #connectDiv:hover{
     transform: scale(0.95);
 }
