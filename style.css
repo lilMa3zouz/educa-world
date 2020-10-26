@@ -73,9 +73,18 @@ body{
     color: var(--content2); 
 }
 #connect{
-    border-color: var(--content2);
-    background-color: var(--content2);
-    color: white;
+    outline:none;
+    border:none;
+    background-color: transparent;
+    width: auto;
+    font-size: 55px;
+    color: var(--content2);
+}
+#connectDiv:hover{
+    transform: scale(0.95);
+}
+#connect:active{
+    transform: scale(0.90);
 }
 /* -------------------------------------------------------------------- */
 
