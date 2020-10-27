@@ -12,3 +12,12 @@ Donec vitae nibh vitae leo euismod ultrices sit amet at libero. Sed nulla urna, 
               <div id="circleLeft" class="circle"></div>
               <div><img class="fleche" style="margin-left: 6px;margin-top: 10px;" src="angle-left-icon_2.svg" width="30px"><div></div></div></div></div>
               </a>
+<script type="text/javascript">
+      function loadSwitch(){
+          document.getElementById("loader").style.display = "none"
+          document.getElementById("page").style.display = "block"
+      }
+
+    </script>
+
+        <div id="loader" style="background-color: #1a4175;display: block;position: absolute;top:0;bottom: 0;left: 0;right: 0;"><p style="position:absolute; top:40%; width: 100%;text-align: center;height: auto;overflow: auto;"><img src="Rolling-1s-200px.gif" width="5%"></p></div>

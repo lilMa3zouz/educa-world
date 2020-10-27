@@ -50,6 +50,31 @@ document.getElementById("controlRight").onmouseover = function(){
 document.getElementById("controlRight").onmouseleave = function(){
   circleRight.animate(0.0); 
 }
-//<span style="font-size: 80px;" class="c1" >EDUCA'WORLD </span><br>
-              //<span style="font-size: 25px;border-radius: 5px;" class="c1">Savoir, Épannouissement, Persevérence</span><br>
-              
+
+var order = [
+  {
+   id: "header",
+   cible: "top",
+   add: "animate__slideInLeft",
+   remove: "hidden"
+  },
+  {
+    id: "top",
+   cible: "bigLogo",
+   add: "animate__backInUp",
+   remove: "hidden"
+  },
+  {
+   id:"bigLogo",
+   cible:"citation",
+   add: "x",
+   remove: "undefined"
+  }
+]
+order.forEach(function(element){
+  document.getElementById(element.id).addEventListener("animationend",function(){
+    document.getElementById(element.cible).classList.add(element.add)
+    document.getElementById(element.cible).classList.remove(element.remove)
+    console.log("pute")
+  })
+})

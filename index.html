@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
   <meta charset="UTF-8">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="materialIcons.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript">
+    <script>
       function loadSwitch(){
+        setTimeout(function(){
           document.getElementById("loader").style.display = "none"
           document.getElementById("page").style.display = "block"
+        },1500)
       }
-
     </script>
-    <link href="bootstrap.min.css" rel="stylesheet">
-    <link href="materialIcons.css" rel="stylesheet">
 </head>
 
-<body onload=" setTimeout(loadSwitch,1500)">
-    <div id="loader" style="background-color: #1a4175;display: block;position: absolute;top:0;bottom: 0;left: 0;right: 0;"><p style="position:absolute; top:40%; width: 100%;text-align: center;height: auto;overflow: auto;"><img src="Rolling-1s-200px.gif" width="5%"></p></div>
+<body onload="loadSwitch();">
+    <div id="loader" style="display:block;background-color:#1a4175;position: absolute;top: 0;left: 0;right: 0;height: 150%;" ><img src="Rolling-1s-200px.gif"> </div>
     <div id="page" style="display: none;">
-    <nav id="header" class="site-header sticky py-2 navbar navbar-expand-sm" >
+      <nav id="header" class="site-header sticky py-2 navbar navbar-expand-sm animate__animated animate__backInDown" >
       <img id="logo" src="titre.svg" height="90px">
      <div class="container d-flex flex-column flex-md-row justify-content-between" style="margin-right: 50px;" id="nav">
         <a id="el4" onclick="if($('#apropos').length){var getOffset = $('#apropos').offset().top;var targetDistance = 150;$('html,body').animate({scrollTop: getOffset - targetDistance}, 500);}" class="d-none d-md-inline-block py-4" >Notre mission</a>
@@ -38,9 +39,9 @@
       <p style="font-size: 13px;line-height: 10px;margin-top: 10px;width: 70px; text-align: center;" id="connectDiv"><img src="account_circle-black-18dp.svg" width="45px" id="connect"><br>Connexion</p>
     </nav>
         <div id="corp">
-          <div id="top">
-              <p style="width:100%;text-align:center;margin-top: 4%;"><img src="titre.svg" id="bigLogo" width="30%"></p>
-              <div id="citation"><p class="typewriter">«L'échec est le fondement de la réussite» - Lao-Tseu</p>
+          <div id="top" class="animate__animated hidden">
+              <p style="width:100%;text-align:center;margin-top: 4%;"><img src="titre.svg" id="bigLogo" class="animate__animated hidden" width="35%"></p>
+              <div id="citation" class="undefined"><p class="typewriter">«L'échec est le fondement de la réussite» - Lao-Tseu</p>
           </div>
           </div>
           <div class="c2" id="apropos" style="width: 100%;overflow: auto;">
@@ -216,10 +217,10 @@
               <p class="contentTitle py-1" style="text-align:center"> Nous contacter</p>
             <form id="contactForm">
               <div class="form-group">
-                <input type="email" class="form-control contactField" placeholder="adresse E-mail (pour vous répondre)">
+                <input type="email" class="form-control contactField" id="exampleFormControlInput1" placeholder="adresse E-mail (pour vous répondre)">
               </div>
               <div class="form-group">
-                <input type="email" class="form-control contactField" placeholder="Age">
+                <input type="email" class="form-control contactField" id="exampleFormControlInput1" placeholder="Age">
               </div>
               <div class="form-group">
                 <textarea class="form-control contactField"  id="exampleFormControlTextarea1" rows="6" placeholder="Question/renseignement"></textarea>
@@ -235,7 +236,6 @@
         <script src="bootstrap.min.js"></script>
         <script src="script.js"></script>
     </div>
-    </body>
+</body>
 
 </html>
-
