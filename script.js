@@ -75,6 +75,24 @@ order.forEach(function(element){
   document.getElementById(element.id).addEventListener("animationend",function(){
     document.getElementById(element.cible).classList.add(element.add)
     document.getElementById(element.cible).classList.remove(element.remove)
-    console.log("pute")
   })
 })
+
+window.onscroll = function() {
+  if (window.pageYOffset >= document.getElementById("bigLogo").offsetTop+140) {
+    document.getElementById("aproposTitle").classList.remove("hidden")
+    document.getElementById("aproposTitle").classList.add("animate__bounceIn")
+  }
+  if (window.pageYOffset >= document.getElementById("bigLogo").offsetHeight) {
+    document.getElementById("aproposContent1").classList.remove("hidden")
+    document.getElementById("aproposContent1").classList.add("animate__slideInLeft")
+  } 
+  if (window.pageYOffset >= document.getElementById("bigLogo").offsetHeight+100) {
+    document.getElementById("aproposContent3").classList.remove("hidden")
+    document.getElementById("aproposContent3").classList.add("animate__slideInRight")
+  } 
+  if (window.pageYOffset >= document.getElementById("bigLogo").offsetHeight+150) {
+    document.getElementById("aproposContent2").classList.remove("hidden")
+    document.getElementById("aproposContent2").classList.add("animate__slideInUp")
+  } 
+};

@@ -8,16 +8,17 @@
     <link rel="stylesheet" href="style.css">
     <script>
       function loadSwitch(){
+        document.getElementById("spinner").classList.add("animate__fadeOut")
         setTimeout(function(){
           document.getElementById("loader").style.display = "none"
           document.getElementById("page").style.display = "block"
-        },1500)
+        },900)
       }
     </script>
 </head>
 
 <body onload="loadSwitch();">
-    <div id="loader" style="display:block;background-color:#1a4175;position: absolute;top: 0;left: 0;right: 0;height: 150%;" ><img src="Rolling-1s-200px.gif"> </div>
+    <div id="loader" style="display:block;background-color:#1a4175;position: absolute;top: 0;left: 0;right: 0;height: 101%;" ><p class="animate__animated" id="spinner" style="width: 100%;text-align: center;height: auto;overflow: auto;margin: 0;position: absolute;top:45%"><img src="Rolling-1s-200px.gif" width="5%"></p> </div>
     <div id="page" style="display: none;">
       <nav id="header" class="site-header sticky py-2 navbar navbar-expand-sm animate__animated animate__backInDown" >
       <img id="logo" src="titre.svg" height="90px">
@@ -38,16 +39,19 @@
       </div>
       <p style="font-size: 13px;line-height: 10px;margin-top: 10px;width: 70px; text-align: center;" id="connectDiv"><img src="account_circle-black-18dp.svg" width="45px" id="connect"><br>Connexion</p>
     </nav>
+
         <div id="corp">
           <div id="top" class="animate__animated hidden">
               <p style="width:100%;text-align:center;margin-top: 4%;"><img src="titre.svg" id="bigLogo" class="animate__animated hidden" width="35%"></p>
               <div id="citation" class="undefined"><p class="typewriter">«L'échec est le fondement de la réussite» - Lao-Tseu</p>
           </div>
           </div>
+
+
           <div class="c2" id="apropos" style="width: 100%;overflow: auto;">
-              <p class="contentTitle py-4">Notre mission</p><br>
+              <p class="contentTitle py-4 hidden animate__animated " id="aproposTitle">Notre mission</p><br>
               <div class="d-flex flex-column flex-md-row" style="width: 100%;">
-                <p class="aproposContent" style="margin-right: 40px;">
+                <p class="aproposContent hidden animate__animated" id="aproposContent1" style="margin-right: 40px;">
                   <b style="font-size: 30px;">I. Démocratiser l'accès d'orientation à l'international</b><br>
                   Nous souhaitons que les lycéens français.es aient
                   conscience de toutes les possibilités d’orientation qui
@@ -55,7 +59,7 @@
                   permettra d’exploiter leurs potentiels de la manière la plus
                   efficace possible.
                 </p>
-                <p class="aproposContent" style="margin-right: 40px;">
+                <p class="aproposContent hidden animate__animated" id="aproposContent2" style="margin-right: 40px;">
                   <b style="font-size: 30px;">II. Aider à l’accès aux meilleures universités de la planète. (Top 100)</b><br>
                   Un objectif plus précis et exclusif aux étudiants
                   sélectionnés. Nous avons décortiqué le processus de
@@ -66,7 +70,7 @@
                   développement d’activités et projets extra-scolaires.
                   Le but étant de limiter les barrières sociales et financières.                  
                 </p>
-                <p class="aproposContent" style="margin-right: 40px;">
+                <p class="aproposContent hidden animate__animated" id="aproposContent3" style="margin-right: 40px;">
                   <b style="font-size: 30px;">III. Créer un réseau qui s’auto-alimente</b><br>
                   C’est pourquoi nous avons la volonté de créer un réseau
                   d’Alumni incluant tous les participants au programme

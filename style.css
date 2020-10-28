@@ -68,7 +68,7 @@ body{
     background-color:white;
     height: 99%;
     z-index: 900;
-    overflow: auto;
+    overflow: hidden;
 }
 #searchField{
     border-color: var(--content2);
@@ -95,7 +95,7 @@ body{
   margin: 0 auto;
   letter-spacing: .15em; /* Adjust as needed */
   animation: 
-    typing 4.5s steps(40, end),
+    typing 3.5s steps(40, end),
     blink-caret .75s step-end infinite;
 }
 
