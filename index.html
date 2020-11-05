@@ -18,10 +18,10 @@
 </head>
 
 <body onload="loadSwitch();">
-    <div id="loader" style="display:block;background-color:#1a4175;position: absolute;top: 0;left: 0;right: 0;height: 101%;" ><p class="animate__animated" id="spinner" style="width: 100%;text-align: center;height: auto;overflow: auto;margin: 0;position: absolute;top:45%"><img src="Rolling-1s-200px.gif" width="5%"></p> </div>
+    <div id="loader" style="display:block;background-color:#1a4175;position: absolute;top: 0;left: 0;right: 0;height: 101%;" ><p class="animate__animated" id="spinner" style="width: 100%;text-align: center;height: auto;overflow: auto;margin: 0;position: absolute;top:45%"><img src="./res/img/Rolling-1s-200px.gif" width="5%"></p> </div>
     <div id="page" style="display: none;">
       <nav id="header" class="site-header sticky py-2 navbar navbar-expand-sm animate__animated animate__backInDown" >
-      <img id="logo" src="titre.svg" height="90px">
+      <img id="logo" src="./res/svg/titre.svg" height="90px">
      <div class="container d-flex flex-column flex-md-row justify-content-between" style="margin-right: 50px;" id="nav">
         <a id="el4" onclick="if($('#apropos').length){var getOffset = $('#apropos').offset().top;var targetDistance = 150;$('html,body').animate({scrollTop: getOffset - targetDistance}, 500);}" class="d-none d-md-inline-block py-4" >Notre mission</a>
         <a id="el2" onclick="if($('#carouselExampleIndicators').length){var getOffset = $('#carouselExampleIndicators').offset().top;$('html,body').animate({scrollTop: getOffset - 140}, 500);}" class="d-none d-md-inline-block py-4" >Tests</a>
@@ -37,12 +37,12 @@
            </div>
           <input type="text" class="form-control" id="searchField" placeholder="recherche..." aria-label="Example text with button addon" aria-describedby="button-addon1">
       </div>
-      <p style="font-size: 13px;line-height: 10px;margin-top: 10px;width: 70px; text-align: center;" id="connectDiv"><img src="account_circle-black-18dp.svg" width="45px" id="connect"><br>Connexion</p>
+      <p style="font-size: 13px;line-height: 10px;margin-top: 10px;width: 70px; text-align: center;" id="connectDiv"><img src="./res/svg/account_circle-black-18dp.svg" width="45px" id="connect"><br>Connexion</p>
     </nav>
 
         <div id="corp">
           <div id="top" class="animate__animated hidden">
-              <p style="width:100%;text-align:center;margin-top: 4%;"><img src="titre.svg" id="bigLogo" class="animate__animated hidden" width="35%"></p>
+              <p style="width:100%;text-align:center;margin-top: 4%;"><img src="./res/svg/titre.svg" id="bigLogo" class="animate__animated hidden" width="35%"></p>
               <div id="citation" class="undefined"><p class="typewriter">«L'échec est le fondement de la réussite» - Lao-Tseu</p>
           </div>
           </div>
@@ -89,7 +89,7 @@
               <div class="carousel-inner">
                 <div class="carousel-item active" style="height: 100%;">
                       <figure>
-                          <img width="20%" class="round" src="writing.jpg" style="border-radius: 100%; border: 1px solid grey;margin-top: 2px;">
+                          <img width="20%" class="round" src="./res/img/writing.jpg" style="border-radius: 100%; border: 1px solid grey;margin-top: 2px;">
                           <figcaption style="text-align: center;font-size: 30px;"> SAT </figcaption>
                       </figure>
                       <p style="text-align: center;font-size:20px">
@@ -99,7 +99,7 @@
                 </div>
                 <div class="carousel-item">
                   <figure>
-                      <img width="20%" class="round" src="writing.jpg" style="border-radius: 100%; border: 1px solid grey;margin-top: 2px;">
+                      <img width="20%" class="round" src="./res/img/writing.jpg" style="border-radius: 100%; border: 1px solid grey;margin-top: 2px;">
                       <figcaption style="text-align: center;font-size: 30px;"> IELTS/TOEFL </figcaption>
                   </figure>
                   <p style="text-align: center;font-size:20px">
@@ -157,9 +157,9 @@
                     <a href="mailto:m.mazouz@gmail.com" style="color:#1a4175;">m.mazouz@gmail.com</a>
                   </p>
                   <p class="flex-md-row" style="width: 50%;text-align: center;position: absolute;bottom: 0;left: 0;">
-                    <a target="_blank" href="https://www.facebook.com/RassemblementNational/"><img class="snet" src="facebook-app-symbol.svg" height="50px"></a>
-                    <a target="_blank" href="https://twitter.com/RNational_off"><img class="snet" src="Twitter_Bird.svg" height="50px"></a>
-                    <a target="_blank" href="https://www.instagram.com/rassemblementnational_fr/"><img class="snet" src="instagram.svg"  height="50px"></a>                    
+                    <a target="_blank" href="https://www.facebook.com/RassemblementNational/"><img class="snet" src="./res/svg/facebook-app-symbol.svg" height="50px"></a>
+                    <a target="_blank" href="https://twitter.com/RNational_off"><img class="snet" src="./res/svg/Twitter_Bird.svg" height="50px"></a>
+                    <a target="_blank" href="https://www.instagram.com/rassemblementnational_fr/"><img class="snet" src="./res/svg/instagram.svg"  height="50px"></a>                    
                   </p>
                   </div>
               </p>
@@ -187,7 +187,7 @@
             <div class="row" style="justify-content: center; width: 90%;margin-left: 5%;margin-right: 5%;">
               <div class="gm flex-column">
                 <p style="width: 250px;text-align: center;">
-                  <img src="shape (1).svg" width="150px"><br>
+                  <img src="./res/svg/shape (1).svg" width="150px"><br>
                   <span style="font-size: 35px;">SOVIX</span> <br>
                   <span style="font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sodales, mi vitae varius luctus, felis neque lobortis augue, fermentum hendrerit ex libero<br></span>
                   <a style="color: var(--content1);font-size: 25px;" href="#"> Lien Site</a>
@@ -195,7 +195,7 @@
               </div>
               <div class="gm flex-column">
                 <p style="width: 250px;text-align: center;">
-                  <img src="shape 2.svg" width="150px"><br>
+                  <img src="./res/svg/shape 2.svg" width="150px"><br>
                   <span style="font-size: 35px;">SOLID</span> <br>
                   <span style="font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sodales, mi vitae varius luctus, felis neque lobortis augue, fermentum hendrerit ex libero<br></span>
                   <a style="color: var(--content1);font-size: 25px;" href="#"> Lien Site</a>
@@ -204,7 +204,7 @@
               </div>
               <div class="gm flex-column">
                 <p style="width: 250px;text-align: center;">
-                  <img src="shape 3.svg" width="150px"><br>
+                  <img src="./res/svg/shape 3.svg" width="150px"><br>
                   <span style="font-size: 35px;">ITAKA</span> <br>
                   <span style="font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sodales, mi vitae varius luctus, felis neque lobortis augue, fermentum hendrerit ex libero<br></span>
                   <a style="color: var(--content1);font-size: 25px;" href="#"> Lien Site</a>
@@ -234,10 +234,10 @@
             </div>
           </div>
         </div>
-        <script src="jquery-3.5.1.js"></script>
-        <script src="progressBar.js"></script>        
-        <script src="popper.min.js"></script>
-        <script src="bootstrap.min.js"></script>
+        <script src="./res/lib/jquery-3.5.1.js"></script>
+        <script src="./res/lib/progressBar.js"></script>        
+        <script src="./res/lib/popper.min.js"></script>
+        <script src="./res/lib/bootstrap.min.js"></script>
         <script src="script.js"></script>
     </div>
 </body>

@@ -19,7 +19,7 @@ var circleLeft = new ProgressBar.Circle("#circleLeft", {
   trailWidth: 1,
   svgStyle: null,
   text: {
-        value: '<p><img src="angle-left-icon_2.svg" class="fleches2" id="buttonLeft" style="margin-right:7px;"></p>',
+        value: '<p><img src="./res/svg/angle-left-icon_2.svg" class="fleches2" id="buttonLeft" style="margin-right:7px;"></p>',
         className: 'progressbar__label',
       }
 });
@@ -33,7 +33,7 @@ var circleRight = new ProgressBar.Circle("#circleRight", {
   trailWidth: 1,
   svgStyle: null,
   text: {
-    value: '<p style="width:100%;height:100%;text-align:center"><img class="fleches2" src="angle-right-icon_2.svg" style="margin-left:7px;" id="buttonLeft"></p>',
+    value: '<p style="width:100%;height:100%;text-align:center"><img class="fleches2" src="./res/svg/angle-right-icon_2.svg" style="margin-left:7px;" id="buttonLeft"></p>',
     className: 'progressbar__label',
   }
 });
